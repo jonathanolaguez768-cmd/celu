@@ -70,9 +70,7 @@ function bloomFlower() {
 
 btnNo.addEventListener("click", () => {
     music2.play().catch(e => console.error("Error al reproducir audio:", e));
-    musicStarted = true;
-
-  
+ 
   btnNo.textContent = noMessages[noIndex];
   noIndex = (noIndex + 1) % noMessages.length;
 
@@ -91,11 +89,10 @@ btnNo.addEventListener("click", () => {
 });
 
 btnYes.addEventListener("click", () => {
- 
     music2.pause();
     music2.currentTime = 0;
   // Reproducir music
-  music2.play().catch(e => console.error("Error al reproducir audio:", e));
+  music.play().catch(e => console.error("Error al reproducir audio:", e));
   overlay.style.display = "none";
   stage.style.display = "flex";
   floatingHearts();
@@ -114,3 +111,4 @@ btnYes.addEventListener("click", () => {
 
 
 restartBtn.addEventListener("click", () => location.reload());
+
