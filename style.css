@@ -304,7 +304,7 @@ body {
   cursor: pointer;
   align-self: center;
   position: absolute;
-  top: 87%;
+  top: 89%;
 }
 /*pantalla celular*/
 @media (max-width: 600px) {
@@ -2289,4 +2289,5 @@ body {
     fill: rgba(11, 113, 255, 0.511);
     opacity: 1;
   }
+
 }
