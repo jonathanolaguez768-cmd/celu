@@ -95,7 +95,7 @@ btnYes.addEventListener("click", () => {
     music2.pause();
     music2.currentTime = 0;
   // Reproducir music
-  music.play().catch(e => console.error("Error al reproducir audio:", e));
+  music2.play().catch(e => console.error("Error al reproducir audio:", e));
   overlay.style.display = "none";
   stage.style.display = "flex";
   floatingHearts();
@@ -111,5 +111,6 @@ btnYes.addEventListener("click", () => {
     restartBtn.style.display = "inline-block";
   }, 21000);
 });
+
 
 restartBtn.addEventListener("click", () => location.reload());
