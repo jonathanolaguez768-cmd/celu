@@ -69,11 +69,9 @@ function bloomFlower() {
 }
 
 btnNo.addEventListener("click", () => {
-    music2.play().catch(e => console.error("Error al reproducir audio:", e));
- 
+  music2.play().catch(e => console.error("Error al reproducir audio:", e));
   btnNo.textContent = noMessages[noIndex];
   noIndex = (noIndex + 1) % noMessages.length;
-
   const btnWidth = btnNo.offsetWidth;
   const btnHeight = btnNo.offsetHeight;
 
@@ -111,4 +109,5 @@ btnYes.addEventListener("click", () => {
 
 
 restartBtn.addEventListener("click", () => location.reload());
+
 
